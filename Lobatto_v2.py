@@ -98,7 +98,7 @@ def ddL(n):
 		#return lambda x: ( (2*n-1) * (2 * dL(n-1)(x)) + x * ddL(n-1)(x) - ((n-1) * dL(n-2)(x)) ) / n
 
 		# approximate by fitting polynomial and taking derivatives
-		c_om1 = coef_approximation(L(order-1), order-1)
+		c_om1 = coef_approximation(L(n), n)
 		c_prime = polynomial_derivative(c_om1)
 		c_double_prime = polynomial_derivative(c_prime)
 
